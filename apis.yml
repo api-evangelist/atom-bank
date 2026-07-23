@@ -1,8 +1,13 @@
 aid: atom-bank
 name: Atom Bank
-description: 'Atom Bank is a company surfaced as a portfolio company of anthemis and added to the API
-  Evangelist network as a stub for enrichment. Sector: fintech. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'Atom Bank plc is a UK app-only digital bank headquartered in Newcastle upon Tyne, and the
+  first mobile-only bank in the United Kingdom (no branches, no web banking). Authorised by the Prudential
+  Regulation Authority and regulated by the Financial Conduct Authority (FS Register 661960), Atom offers
+  fixed savings accounts, residential and commercial mortgages, and secured business lending, all delivered
+  through its iOS and Android apps. Atom does not publish a public developer API or developer portal; it
+  is a consumer of UK Open Banking, letting customers share a one-off snapshot of their bank data (via
+  aggregators such as Plaid, Tink and TrueLayer) to speed lending decisions. Backed by Anthemis and others,
+  Atom runs a Go/Python/Java/Kafka technology stack and operates a four-day working week.'
 url: https://raw.githubusercontent.com/api-evangelist/atom-bank/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,15 +15,63 @@ x-backed-by:
 - anthemis
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
+image: https://logo.clearbit.com/atombank.co.uk
 tags:
 - Company
 - Fintech
+- Banking
+- Digital Bank
+- Challenger Bank
+- Open Banking
+- Mortgages
+- Savings
+- Lending
+- United Kingdom
 apis: []
+common:
+- type: DomainSecurity
+  url: security/atom-bank-domain-security.yml
+- type: Website
+  url: https://www.atombank.co.uk/
+- type: About
+  url: https://www.atombank.co.uk/about-us/
+- type: Blog
+  url: https://www.atombank.co.uk/blog/
+- type: Newsroom
+  url: https://www.atombank.co.uk/newsroom/
+- type: GitHubOrganization
+  url: https://github.com/atombank
+- type: Support
+  url: https://www.atombank.co.uk/support/
+- type: PrivacyPolicy
+  url: https://www.atombank.co.uk/policies/privacy-and-data/
+- type: TermsOfService
+  url: https://www.atombank.co.uk/terms/web/
+- type: OpenBanking
+  url: https://www.atombank.co.uk/open-banking/
+- type: Technology
+  url: https://www.atombank.co.uk/about-us/technology/
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
